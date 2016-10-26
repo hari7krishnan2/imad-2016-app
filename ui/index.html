@@ -1,17 +1,37 @@
 <!doctype html>
 <html>
     <head>
+        <title>New improvement</title>
         <link href="/ui/style.css" rel="stylesheet" />
+        <script src="script07.js"></script>
+     <link rel="stylesheet" href="script01.css">
     </head>
     <body>
         <div class="center">
             <img src="/ui/madi.png" class="img-medium"/>
         </div>
+        <div class="centered">
+        <img src="images/reading1.gif" id="adBanner" alt="Ad Banner">
+     </div>
         <br>
         <div class="center text-big bold">
             Hi! I am Hari . and this is my first webapp
         </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
+        <script>window.onload = rotate;
+
+var theAd = 0;
+var adImages = new Array("images/reading1.gif","images/reading2.gif","images/reading3.gif");
+
+function rotate() {
+     theAd++;
+     if (theAd == adImages.length) {
+        theAd = 0;
+     }
+     document.getElementById("adBanner").src = adImages[theAd];
+
+     setTimeout(rotate, 3 * 1000);
+}</script>
     </body>
 </html>
