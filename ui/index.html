@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>TOP GEAR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="/ui/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
         <script src="script07.js"></script>
      <link rel="stylesheet" href="script01.css">
     </head>
@@ -10,7 +12,32 @@
         <div class="center">
             <img src="/ui/madi.png" class="img-medium"/>
         </div>
-       
+       <div class="w3-content w3-section" style="color:grey;max-width:500px">
+  <p>The w3-animate-fading class animates an element in and out (takes about 10 seconds).</p>
+
+  <img class="mySlides w3-animate-fading" src="https://images6.alphacoders.com/482/thumb-1920-482525.jpg"  align="middle" style="width:120%">
+  <img class="mySlides w3-animate-fading" src="https://images6.alphacoders.com/343/thumb-1920-343136.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="http://cdn.wallpapersafari.com/54/83/QGzDVL.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="http://cdn.pinthiscars.com/images/lamborghini-murcielago-2013-blue-wallpaper-1.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 6000);
+}
+</script>
+
         <br>
         <div class="center text-big bold">
             Hi! I am Hari . and this is my first webapp
