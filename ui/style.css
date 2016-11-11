@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     background-color: #b2b2b2;
     background-color: rgba(0, 0, 0, .3);
-    background-image: url('/images/background-gaming-1 copy.png');
+    background-image: url("images/background-gaming-1 copy.png");
     margin-top: 75px;
 }
 
