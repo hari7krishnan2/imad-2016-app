@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     background-color: #b2b2b2;
     background-color: rgba(0, 0, 0, .3);
-    background-image: url("http://s1.knowsky.com/20140816/20140818133446216.jpg");
+    background-image: url('ui/background copy.jpg');
     margin-top: 75px;
 }
 
