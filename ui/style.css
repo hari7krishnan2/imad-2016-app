@@ -11,7 +11,10 @@ h2{
     text-shadow: 3px 3px #82CAFA;
     font-size: 500%;
 }
-p1{font: italic bold 12px/30px Georgia, serif;}    
+p1{
+    font: italic bold 12px/30px Georgia, serif;
+    font-size: 200%;
+}    
 .center {
     text-align: center;
 }
