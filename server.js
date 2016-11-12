@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/about', function(req, res){
-    res.send('test about');
+    res.sendFile(path.join(__dirname, 'ui', 'about.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
@@ -32,6 +32,9 @@ app.get('/ui/controller-animation.css', function (req, res) {
 });
 app.get('/ui/dropdown.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'dropdown.css'));
+});
+app.get('/ui/about.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'about.css'));
 });
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
