@@ -24,6 +24,9 @@ app.get('/ui/loader.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+app.get('/ui/analog.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'analog.jpg'));
+});
 app.get('/ui/controller-animation.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'controller-animation.css'));
 });
