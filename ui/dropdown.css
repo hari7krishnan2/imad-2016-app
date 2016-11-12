@@ -1,5 +1,5 @@
 .dropbtn {
-    position:relative;right:460px;top:2px;
+   position:relative;right:500px;bottom:100px;
     background-color: #4CAF50;
     color: white;
     padding: 16px;
@@ -14,7 +14,7 @@
 }
 
 .dropdown-content {
-    position: absolute;
+    position:absolute;right:422px;bottom:-15px;
     display: none;
     background-color: #f9f9f9;
     min-width: 160px;
