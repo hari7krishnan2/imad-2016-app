@@ -1,20 +1,46 @@
 .dropbtn {
    position:relative;right:500px;bottom:100px;
+   border-radius: 4px;
     background-color: #4CAF50;
     color: white;
+    text-align: center;
     padding: 16px;
     font-size: 16px;
     border: none;
+    transition: all 0.5s;
     cursor: pointer;
+    margin: 5px;
 }
+.dropbtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.dropbtn span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
 
 .dropdown {
     position:relative;
     display: inline-block;
 }
+.dropbtn:hover span {
+  padding-right: 25px;
+}
 
+.dropbtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 .dropdown-content {
-    position:absolute;right:422px;bottom:-15px;
+    position:absolute;right:452px;bottom:-15px;
     display: none;
     background-color: #f9f9f9;
     min-width: 160px;
