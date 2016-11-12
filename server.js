@@ -18,6 +18,9 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/loader.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'loader.js'));
 });
+app.get('/ui/smoothscroll.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'smoothscroll.js'));
+});
 app.get('/ui/loader.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'loader.css'));
 });
@@ -35,6 +38,9 @@ app.get('/ui/dropdown.css', function (req, res) {
 });
 app.get('/ui/about.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'about.css'));
+});
+app.get('/ui/smoothscroll.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'smoothscroll.css'));
 });
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
