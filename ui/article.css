@@ -1,19 +1,28 @@
+body{
+ background-color: #212121;
+}
 p{
-color: #006064;
+padding-right: 80px;
+padding-left: 80px;
+color: #D7CCC8;
 font-size: 20px;	
 }
 h1{
 font-family: "Times New Roman", Times, serif;
 font-size: 40px;
-color: #0277BD;
+color: white;
 }
 h
 {
 font-size: 30px;
-color: #0277BD;
-}	
+color: #81C784;
+}
+div1.relative {
+    position: relative;
+    left: 300px;
+    }	
 table {
-    width:100%;
+    width:40%;
 }
 
 table, th, td {
@@ -79,3 +88,4 @@ table#t01 th {
     background-color: #f44336;
     color: white;
 }
+
